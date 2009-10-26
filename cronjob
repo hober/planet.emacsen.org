@@ -1,0 +1,2 @@
+cd /web/planet.emacsen.org/
+/usr/bin/python venus/planet.py config.ini > /dev/null 2>&1

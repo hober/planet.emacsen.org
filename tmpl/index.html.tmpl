@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title><TMPL_VAR name></title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link href="atom.xml" rel="alternate" type="application/atom+xml"
+        title="Atom feed" />
+  <meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">" />
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-648822-5");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+  <style type="text/css">
+    #flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
+    #flickr_badge_icon {display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
+    #flickr_icon_td {padding:0 5px 0 0 !important;}
+    .flickr_badge_image {text-align:center !important;}
+    .flickr_badge_image img {border: 1px solid black !important;}
+    #flickr_badge_uber_wrapper {width:150px;}
+    #flickr_www {display:block; text-align:center; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+    #flickr_badge_uber_wrapper a:hover,
+    #flickr_badge_uber_wrapper a:link,
+    #flickr_badge_uber_wrapper a:active,
+    #flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+    #flickr_badge_wrapper {}
+    #flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+</style>
+</head>
+<body>
+  <div id="page">
+    <div id="header">
+      <h1><a href="http://planet.emacsen.org/"><TMPL_VAR name></a></h1>
+      <div>People living with the extensible, self-documenting text editor.</div>
+    </div>
+
+    <div id="content" class="narrowcolumn">
+      <TMPL_LOOP Items>
+        <div class="post">
+          <TMPL_IF title>
+            <h2>
+              <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title ESCAPE="HTML">"><TMPL_VAR channel_name></a>: 
+              <a rel="bookmark" href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR title></a>
+            </h2>
+          </TMPL_IF>
+          <TMPL_IF icon>
+            <img class="feed-icon" src="<TMPL_VAR icon>" alt="<TMPL_VAR channel_title ESCAPE="HTML">" />
+          </TMPL_IF>
+          <div class="entry">
+            <TMPL_VAR content>
+          </div>
+          <pre class="mode-line">-1:-- <a href="<TMPL_VAR link ESCAPE="HTML">" rel="bookmark"><TMPL_VAR title></a> (Post<TMPL_IF author> <TMPL_VAR author></TMPL_IF>)--L0--C0--<TMPL_VAR date></pre>
+        </div>
+      </TMPL_LOOP>
+    </div> <!-- #content -->
+
+    <div id="sidebar">
+      <ul>
+        <li><img src="E-flag01.png" alt="Planet Emacsen logo, by e1f" /></li>
+        <li>
+          <h2>About <TMPL_VAR name></h2>
+          <ul>
+            <li><a type="application/atom+xml" href="atom.xml" rel="alternate">Atom feed</a></li>
+            <li><a href="mailto:hober0@gmail.com">Add or remove a feed</a></li>
+            <li>Powered by <a href="http://intertwingly.net/code/venus/">Planet Venus</a></li>
+            <li>Logo by <a href="http://www.ee.ryerson.ca/~elf/">Luis Fernandes</a></li>
+            <li>Run by <a href="http://edward.oconnor.cx/">Edward O'Connor</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>Subscriptions (<a href="opml.xml">OPML</a>)</h2>
+          <ul>
+            <TMPL_LOOP Channels>
+              <li><a href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title ESCAPE="HTML">"><TMPL_VAR name></a> <a href="<TMPL_VAR url ESCAPE="HTML">">(feed)</a></li>
+            </TMPL_LOOP>
+          </ul>
+        </li>
+        <li>
+          <iframe src="http://rcm.amazon.com/e/cm?t=edwardoconnor-20&amp;o=1&amp;p=14&amp;l=st1&amp;mode=books&amp;search=Emacs&amp;=1&amp;fc1=&amp;lt1=_blank&amp;lc1=&amp;bg1=&amp;f=ifr" marginwidth="0" marginheight="0" width="160" height="600" frameborder="0" style="border:none;" scrolling="no"></iframe>
+        </li>
+        <li>
+          <script type="text/javascript"><!--
+google_ad_client = "pub-0857317454253575";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+//2007-08-27: Emacs
+google_ad_channel = "6697327260";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "000088";
+google_ui_features = "rc:6";
+//-->
+          </script>
+          <script type="text/javascript"
+                  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+          </script>
+        </li>
+        <li>
+          <!-- Start of Flickr Badge -->
+          <table id="flickr_badge_uber_wrapper" cellpadding="0"
+                 cellspacing="10" border="0">
+            <tr>
+              <td>
+                <a href="http://www.flickr.com" id="flickr_www">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a>
+                <table cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper">
+                  <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?show_name=1&amp;count=5&amp;display=latest&amp;size=t&amp;layout=v&amp;source=all_tag&amp;tag=emacs&amp;user=27935720%40N00"></script>
+                  <tr>
+                    <td id="flickr_badge_source" valign="center" align="center">
+                      <table cellpadding="0" cellspacing="0" border="0"><tr>
+                        <td id="flickr_badge_source_txt">More <a href="http://www.flickr.com/photos/tags/emacs/">Flickr photos tagged with emacs</a></td>
+                      </tr></table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- End of Flickr Badge -->
+        </li>
+        <li>
+          <q cite="http://twitter.com/sachac/status/1057016724">I
+          can&#8217;t believe how much I&#8217;ve missed reading Planet
+          Emacsen. Reading other <code>#emacs</code> geeks&#8217; posts
+          about hacking the editor makes me want to. <code>=)</code></q>
+          &#8212; <a href="http://sachachua.com/">Sacha Chua</a> on
+          <cite><a
+          href="http://twitter.com/sachac/status/1057016724">twitter</a></cite>
+        </li>
+      </ul>
+    </div>
+  </div> <!-- .page -->
+</body>
+</html>

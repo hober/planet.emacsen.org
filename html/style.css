@@ -1,0 +1,527 @@
+/* Begin Typography & Colors */
+
+body {
+  font-size: 87.5%;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+body, pre, code {
+  font-family: 'Bitstream Vera Sans Mono', Monaco, 'Lucida Console', Courier, monospace;
+}
+
+.post .entry h2,
+#page {
+  text-align: left;
+  max-width: 98%;
+}
+
+.narrowcolumn .entry, .widecolumn .entry {
+  line-height: 1.2em;
+}
+
+small, table {
+  font-size: 0.9em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+h2 div {
+  display: inline;
+}
+
+#sidebar iframe {
+  margin-left: 1em;
+}
+
+#sidebar h2 {
+  text-align: left;
+}
+
+.entry h3 {
+  color: #f99;
+}
+
+h1, h1 a, h1 a:hover, h1 a:visited, .description {
+  text-decoration: none;
+  color: #333;
+}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+  color: #eee;
+  font-weight: bold;
+  font-size: 1.125em;
+}
+
+h2 a:hover, h2 a:active {
+  color: #fff;
+}
+
+#sidebar h2, #sidebar h2 a, #sidebar h2 a:visited, #sidebar h3, #sidebar
+h3 a, #sidebar h3 a:visited {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.125em;
+}
+
+#sidebar h2 a:hover, #sidebar h2 a:active {
+  color: #000;
+  text-decoration: underline;
+}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #wp-calendar caption, cite {
+  text-decoration: none;
+}
+
+.entry p a:visited {
+  color: #b85b5a;
+}
+
+.commentlist cite, .commentlist cite a {
+  font-style: normal;
+}
+
+.commentlist p {
+  font-weight: normal;
+  text-transform: none;
+}
+
+.commentmetadata {
+  font-weight: normal;
+}
+
+small, .nocomments, .mode-line, blockquote, strike {
+  color: #333;
+}
+
+.mode-line div {
+  display: inline;
+  white-space: nowrap;
+}
+
+acronym, abbr, span.caps
+{
+  font-size: 0.9em;
+  letter-spacing: .07em;
+}
+
+a, h3 a:hover {
+  color: #06c;
+  text-decoration: none;
+}
+
+.entry a:hover, .navigation a:hover {
+  background-color: #b4eeb4;
+  text-decoration: none;
+}
+
+#wp-calendar #prev a {
+  font-size: 9pt;
+}
+
+#wp-calendar a {
+  text-decoration: none;
+}
+
+#wp-calendar th {
+  font-style: normal;
+  text-transform: capitalize;
+}
+/* End Typography & Colors */
+
+/* Begin Structure */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  margin: 20px auto;
+  padding: 0;
+}
+
+#header, #sidebar, #footer {
+  font-family: 'Lucida Grande', Arial, Helvetica, sans-serif;
+}
+
+#header {
+  padding: 0;
+  margin: 0 auto 1em auto;
+  width: 100%;
+}
+
+#header h1 {
+  font-size: 4em;
+}
+
+#header .description {
+  font-size: 1em;
+}
+
+#headerimg {
+  margin: 0;
+  width: 100%;
+}
+
+.narrowcolumn {
+  float: left;
+}
+
+.post {
+  margin: 0 0 1em;
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 0.5em; /* minibuffer */
+  border: 1px solid black;
+  min-width: 50em;
+  width: 50em;
+  max-width: 98%;
+}
+
+.post h2 {
+  background-color: #66c;
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+
+.post .entry h2 {
+  background-color: inherit;
+  color: inherit;
+}
+
+.entry {
+  border-left: 4px solid #eee;
+  border-right: 4px solid #eee;
+  padding-left: 1em;
+  padding-right: 1em;
+  overflow: hidden;
+}
+
+.entry pre {
+  font-size: 1em;
+}
+
+.mode-line {
+  clear: left;
+  padding: 1px;
+  background-color: #ccc;
+  color: #000;
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  border-right: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
+  overflow: hidden;
+}
+
+.mode-line, .mode-line :link, .mode-line :visited,
+.mode-line a:hover, .mode-line :active {
+  color: #000;
+}
+
+.modeline-continuation {
+  overflow: hidden;
+}
+
+#footer {
+  padding: 0 0 0 1px;
+  margin: 0 auto;
+  clear: both;
+  list-style-type: none;
+  font-size: 0.875em;
+  }
+
+#footer li {
+  margin-top: 1em;
+}
+
+/* End Structure */
+
+/*  Begin Headers */
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h2.pagetitle {
+  font-weight: normal;
+}
+
+h3 {
+  padding: 0;
+  margin: 30px 0 0;
+}
+
+/* End Headers */
+
+/* Begin Images */
+p img {
+  padding: 0;
+  max-width: 100%;
+}
+
+/* Begin Lists
+
+  Special stylized non-IE bullets
+  Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .entry ul {
+  margin-left: 0px;
+  padding: 0 0 0 30px;
+  list-style: none;
+  padding-left: 10px;
+  text-indent: -10px;
+}
+
+html>body .entry li {
+  margin: 7px 0 8px 10px;
+}
+
+.entry ul li, #sidebar ul ul li, #commentform ul li {
+  list-style-type: none;
+  clear: both;
+}
+
+.entry ul li:before, #sidebar ul ul li:before, #commentform ul li:before {
+  content: "* ";
+}
+
+#commentform ul li input {
+  float: right;
+  margin-right: 4em;
+}
+
+textarea#comment {
+  margin: 0 2em 0 1em;
+  padding: 0;
+  width: 98%;
+}
+
+.entry ol {
+  padding: 0 0 0 35px;
+  margin: 0;
+}
+
+.entry ol li {
+  margin: 0;
+  padding: 0;
+}
+
+.mode-line ul, .mode-line li {
+  display: inline;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/* Turn "sidebar" into multi-column footer */
+#sidebar ul li, #sidebar ol li {
+  float: left;
+  margin: 1em 2em;
+  padding: 1em;
+  font-size: 0.875em;
+/*   width: 15em; */
+/*   height: 8em; */
+}
+#sidebar ul ul li, #sidebar ul ol li, #sidebar ol ul li, #sidebar ol ol {
+  float: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+/*   width: auto; */
+/*   height: auto; */
+}
+
+#sidebar ul, #sidebar ul ol {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar ul li {
+  list-style-type: none;
+  list-style-image: none;
+  margin-bottom: 15px;
+}
+
+#sidebar ul p, #sidebar ul select {
+  margin: 5px 0 8px;
+}
+
+#sidebar ul ul, #sidebar ul ol {
+  margin: 5px 0 0 10px;
+}
+
+#sidebar ul ul ul, #sidebar ul ol {
+  margin: 0 0 0 10px;
+}
+
+ol li, #sidebar ul ol li {
+  list-style: decimal outside;
+}
+
+#sidebar ul ul li, #sidebar ul ol li {
+  margin: 3px 0 0;
+  padding: 0;
+}
+/* End Entry Lists */
+
+/* Begin Form Elements */
+#searchform {
+  margin: 10px auto;
+  padding: 5px 3px;
+}
+
+#sidebar #searchform #s {
+  padding: 2px;
+}
+
+#sidebar #searchsubmit {
+  padding: 1px;
+}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+  text-align:center;
+}
+
+select {
+  width: 130px;
+}
+
+#commentform input {
+  width: 170px;
+  padding: 2px;
+  margin: 5px 5px 1px 0;
+}
+
+#commentform #submit {
+  margin: 0;
+}
+/* End Form Elements */
+
+
+
+/* Begin Comments*/
+
+.commentlist {
+  margin: 0;
+  padding: 0;
+}
+
+.commentlist li {
+  list-style-type: none;
+}
+
+.commentlist li * {
+  margin: 1em;
+}
+
+.commentlist li pre {
+  margin: 0em;
+}
+
+#commentform p {
+  margin: 1em;
+}
+
+.nocomments {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.commentmetadata {
+  margin: 0;
+  display: block;
+}
+/* End Comments */
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+  cursor: help;
+}
+
+blockquote {
+  margin: 15px 30px 0 10px;
+  padding-left: 20px;
+  font-size: 0.875em;
+}
+blockquote blockquote {
+  font-size: 1em;
+}
+
+blockquote cite {
+  margin: 5px 0 0;
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+hr {
+  display: none;
+}
+
+a img {
+  border: none;
+}
+
+.navigation {
+  background-color: #eee;
+  margin: 0;
+}
+/* End Various Tags & Classes*/
+
+/* elisp */
+
+code.elisp .keyword  { color: #069; }
+code.elisp .fun	     { color: #099; }
+code.elisp .var	     { color: #933; }
+code.elisp .string   { color: #393; }
+code.elisp .comment  { color: #333; }
+code.elisp .rest     { color: #993; }
+code.elisp .builtin  { color: #369; }
+code.elisp .constant { color: #963; }
+code.elisp kbd       { font-weight: bold; }
+code.elisp samp      { font-weight: normal; }
+.ielm .prompt        { color: #933; }
+
+/* latex */
+
+.latex, .tex {
+  font-size: 1em;
+}
+
+/* a of LaTeX */
+.latex sup {
+  font-size: 0.75em;
+  vertical-align: 0.3em;
+  margin-left: -0.3em;
+  text-transform: uppercase;
+}
+
+/* e of TeX/LaTeX */
+.latex sub, .tex sub {
+  vertical-align: -0.25em;
+  margin-left: -0.2em;
+  margin-right: -0.1em;
+  text-transform: uppercase;
+}
+
+.feed-icon {
+  border: 0;
+  float: right;
+  margin: 0.5em;
+}
