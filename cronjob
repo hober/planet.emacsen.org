@@ -1,2 +1,9 @@
+#!/bin/sh
+
 cd /web/planet.emacsen.org/
-/usr/bin/python venus/planet.py config.ini > /dev/null 2>&1
+
+if [ "x$1" = "xloud" ]; then
+    /usr/bin/python venus/planet.py config.ini
+else
+    /usr/bin/python venus/planet.py config.ini > /dev/null 2>&1
+fi
