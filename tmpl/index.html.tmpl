@@ -55,7 +55,7 @@
           <div class="entry">
             <TMPL_VAR content>
           </div>
-          <pre class="mode-line">-1:-- <a href="<TMPL_VAR link ESCAPE="HTML">" rel="bookmark"><TMPL_VAR title></a> (Post<TMPL_IF author> <TMPL_VAR author></TMPL_IF>)--L0--C0--<TMPL_VAR date></pre>
+          <pre class="mode-line">-1:-- <a href="<TMPL_VAR link ESCAPE="HTML">" rel="bookmark"><TMPL_VAR title ESCAPE="HTML"></a> (Post<TMPL_IF author> <TMPL_VAR author></TMPL_IF>)--L0--C0--<TMPL_VAR date></pre>
         </div>
       </TMPL_LOOP>
     </div> <!-- #content -->
@@ -66,7 +66,11 @@
         <li>
           <h2>About <TMPL_VAR name></h2>
           <ul>
-            <li><a type="application/atom+xml" href="atom.xml" rel="alternate">Atom feed</a></li>
+            <li>
+              Feeds:
+              <a type="application/atom+xml" href="atom.xml" rel="alternate">Atom</a>,
+              <a href="http://syndicated.livejournal.com/planet_emacsen/" rel="alternate"><abbr title="LiveJournal">LJ</abbr></a>
+            </li>
             <li><a href="mailto:hober0@gmail.com">Add or remove a feed</a></li>
             <li>Powered by <a href="http://intertwingly.net/code/venus/">Planet Venus</a></li>
             <li>Logo by <a href="http://www.ee.ryerson.ca/~elf/">Luis Fernandes</a></li>
