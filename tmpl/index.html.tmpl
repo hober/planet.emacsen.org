@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <title><TMPL_VAR name></title>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="/style.css"/>
   <link href="atom.xml" rel="alternate" type="application/atom+xml"
         title="Atom feed" />
   <meta name="google-site-verification" content="uccnKRA9RROFoCKOUV-v_MzMITxt2cML-z2deDqZ62Y" />
@@ -36,8 +36,7 @@
 <body>
   <div id="page">
     <div id="header">
-      <h1><a href="http://planet.emacsen.org/"><TMPL_VAR name></a></h1>
-      <div>People living with the extensible, self-documenting text editor.</div>
+      <h1><a href=""><TMPL_VAR name></a></h1>
     </div>
 
     <div id="content" class="narrowcolumn">
@@ -62,19 +61,15 @@
 
     <div id="sidebar">
       <ul>
-        <li><img src="E-flag01.png" alt="Planet Emacsen logo, by e1f" /></li>
+        <li><img src="/E-flag01.png" alt="Planet Emacsen logo, by e1f" /></li>
         <li>
-          <h2>About <TMPL_VAR name></h2>
+          <h2><TMPL_VAR name></h2>
           <ul>
-            <li>
-              Feeds:
-              <a type="application/atom+xml" href="atom.xml" rel="alternate">Atom</a>,
-              <a href="http://syndicated.livejournal.com/planet_emacsen/" rel="alternate"><abbr title="LiveJournal">LJ</abbr></a>
-            </li>
-            <li><a href="mailto:hober0@gmail.com">Add or remove a feed</a></li>
-            <li>Powered by <a href="http://intertwingly.net/code/venus/">Planet Venus</a></li>
-            <li>Logo by <a href="http://www.ee.ryerson.ca/~elf/">Luis Fernandes</a></li>
-            <li>Run by <a href="http://edward.oconnor.cx/">Edward O'Connor</a></li>
+            <li><a type="application/atom+xml" href="atom.xml" rel="alternate"><img src="/feed-icon-14x14.png" alt="Atom feed" /></a></li>
+            <li>powered by <a href="http://intertwingly.net/code/venus/">Planet Venus</a></li>
+            <li>logo by <a href="http://www.ee.ryerson.ca/~elf/">Luis Fernandes</a></li>
+            <li><a href="/">en</a> run by <a href="http://edward.oconnor.cx/">Edward O'Connor</a></li>
+            <li><a href="/ru/">ru</a> run by <a href="http://alexott-ru.blogspot.com/">Alex Ott</a></li>
           </ul>
         </li>
         <li>
@@ -138,15 +133,6 @@ google_ui_features = "rc:6";
             </tr>
           </table>
           <!-- End of Flickr Badge -->
-        </li>
-        <li>
-          <q cite="http://twitter.com/sachac/status/1057016724">I
-          can&#8217;t believe how much I&#8217;ve missed reading Planet
-          Emacsen. Reading other <code>#emacs</code> geeks&#8217; posts
-          about hacking the editor makes me want to. <code>=)</code></q>
-          &#8212; <a href="http://sachachua.com/">Sacha Chua</a> on
-          <cite><a
-          href="http://twitter.com/sachac/status/1057016724">twitter</a></cite>
         </li>
       </ul>
     </div>
