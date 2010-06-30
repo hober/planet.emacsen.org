@@ -1,0 +1,3 @@
+[submodule "venus"]
+	path = venus
+	url = http://github.com/rubys/venus.git
