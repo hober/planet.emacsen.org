@@ -2,3 +2,6 @@
 tmpl/*.tmplc
 html/*.xml
 html/index.html
+cache
+html/ru
+log
