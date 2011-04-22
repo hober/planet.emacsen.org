@@ -10,3 +10,12 @@ update-venus:
 	git submodule update
 	cd venus ; git checkout master ; git pull ; cd ..
 	git add venus
+
+pull-alex:
+	git checkout -b alexott-master master
+	git pull https://github.com/alexott/planet.emacsen.org.git master
+
+take-alex:
+	git checkout master
+	git merge alexott-master
+	git push origin master
