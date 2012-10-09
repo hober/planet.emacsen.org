@@ -12,7 +12,7 @@ update-venus:
 	git add venus
 
 pull-alex:
-	git checkout -b alexott-master master
+	git checkout alexott-master
 	git pull https://github.com/alexott/planet.emacsen.org.git master
 
 take-alex:
