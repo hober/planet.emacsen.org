@@ -5,7 +5,9 @@ cd /web/planet.emacsen.org/
 if [ "x$1" = "xloud" ]; then
     /usr/bin/python venus/planet.py en.ini
     /usr/bin/python venus/planet.py ru.ini
+    /usr/bin/python venus/planet.py zh.ini
 else
     /usr/bin/python venus/planet.py en.ini > /dev/null 2>&1
     /usr/bin/python venus/planet.py ru.ini > /dev/null 2>&1
+    /usr/bin/python venus/planet.py zh.ini > /dev/null 2>&1
 fi
