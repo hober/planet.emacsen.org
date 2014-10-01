@@ -1,0 +1,25 @@
+#+TITLE: Emacs 行星 （Planet Emacsen）
+
+* 简介
+
+  *[[http://planet.emacsen.org/zh/][Emacs 行星]]* 收集和 Emacs 相关的博客。这样只要订阅了 *Emacs 行星* ，就能收到所有 *Emacs 行星* 关注的博客的更新。
+
+
+* 订阅 Emacs 行星
+
+  Atom 地址：http://planet.emacsen.org/zh/atom.xml
+
+
+* 添加博客
+
+  打开 ~zh.ini~ 文件，在底部添加两行：博客订阅地址和博客名称。
+
+  例如：
+  #+BEGIN_SRC conf
+    [http://wenshanren.org/?cat=10&tag=zh&feed=rss2]
+    name = 肉山博客
+  #+END_SRC
+
+  *注* ：cat 是 category，肉山博客不是专门的 Emacs 博客，所以需要通过 cat 和 tag 来做筛选
+
+  然后开个 pull request 即可。
